@@ -16,6 +16,7 @@
     --small-spacing: 8px;
     --medium-spacing: 16px;
     --large-spacing: 32px;
+    --measure: 65ch;
 
     --radius: 8px;
 
@@ -135,6 +136,11 @@ article section{
     background: var(--color-main);
 
 }
+
+.feature-figure img {
+    border-radius: var(--radius);
+}
+
 img{
     display:block;
     max-width:100%;
