@@ -6,7 +6,7 @@
         <title>Composition Plan</title>
         <style>
             body{
-                font-family:Arial,sans-serif;
+                font-family:Georgia, 'Times New Roman',Serif;
                 line-height:1.5;
                 max-width:90rem;
                 margin:auto;
@@ -45,14 +45,65 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Example only</td>
-                        <td>Replace</td>
-                        <td>Replace</td>
-                        <td>Replace</td>
-                        <td>Replace</td>
-                        <td>Replace</td>
-                        <td>Replace</td>
+                        <td>Issue badge</td>
+                        <td>Shows the automotive edition label.</td>
+                        <td>Would normally appear under the introduction.</td>
+                        <td>I picked absolute positioning because it keeps it in the top corner.</td>
+                        <td>Feature header, which has position relative.</td>
+                        <td>Changes back to normal flow on small screens.</td>
+                        <td>I tested on desktop and mobile with a long title.</td>
                     </tr>
+
+                    <tr>
+                        <td>Story guide</td>
+                        <td>Helps readers find different story sections.</td>
+                        <td>Appears before the article in source order.</td>
+                        <td>I picked sticky positioning because it keeps it visible while scrolling.</td>
+                        <td>Main grid area and its containing block.</td>
+                        <td>Changes to static positioning on smaller screens.</td>
+                        <td>I scrolled through the article and checked the section boundaries.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Pull quote</td>
+                        <td>Highlights an important idea in the story.</td>
+                        <td>Appears between regular paragraphs.</td>
+                        <td>I picked relative positioning and a higher layer because it allows a controlled overlap if spacing is adjusted.</td>
+                        <td>Its normal article position.</td>
+                        <td>Normal margins on smaller screens.</td>
+                        <td>I checked that it does not cover paragraphs or links.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Feature image</td>
+                        <td>Introduces the subject of the article.</td>
+                        <td>Appears as a regular figure with a caption.</td>
+                        <td>I picked rounded corners to improve the appearance. And also clip-path adds a slightly angled edge.</td>
+                        <td>Feature figure.</td>
+                        <td>Without clip-path, the image remains rectangular with rounded corners.</td>
+                        <td>I disabled clip-path and checked that the image is still visible.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Shape portrait</td>
+                        <td>Adds a visual break in the future of cars section.</td>
+                        <td>Appears as a regular image before the paragraph.</td>
+                        <td>I picked float and shape-outside to make the text wrap around the circular image.</td>
+                        <td>The future section, which uses flow-root.</td>
+                        <td>Without shape-outside, text wraps around the regular float. On narrow screens it becomes a normal image.</td>
+                        <td>I disabled shape-outside and checked text wrapping.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Story documentation</td>
+                        <td>Provides assessment information and project links.</td>
+                        <td>Appears after the article.</td>
+                        <td>I picked grid column spanning so it places across the main layout.</td>
+                        <td>Main grid container.</td>
+                        <td>Uses one column on smaller screens.</td>
+                        <td>I checked the layout at 320px, 768px, and 1280px.</td>
+                    </tr>
+
                 </tbody>
             </table>
         </body>
